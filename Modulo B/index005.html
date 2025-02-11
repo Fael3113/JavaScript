@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <style>
+        body {
+            font: normal 2em Arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var ano = new Date().getFullYear()
+        var nascimento = Number(window.prompt('Digite seu ano de nascimento (yyyy): '))
+        var carteira = ano - nascimento
+        window.alert('Veremos se você é apto para tirar a habilitação.')
+        carteira >= 18 ? document.write(`Você tem ${carteira} anos e está habitado a adquirir a habilitação!`) : document.write(`Infelizmente você tem ${carteira} anos e não está apto a adquirir a habilitação.`)
+    </script>
+</body>
+</html>
