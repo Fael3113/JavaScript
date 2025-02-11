@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        body {
+            font: normal 2em Arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var salario = Number(window.prompt('Qual o seu salario?'))
+        //var salario2 = salario.toFixed(2).replace('.', ',')
+        var salarioFormatado = salario.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
+        document.write(`Seu salário é de ${salarioFormatado}`)
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        /*Estilo*/
+        body{
+            background-color: rgb(105, 105, 184);
+            color: white;
+            font: normal 1em Arial;
+        }
+        h1{
+            color: rgb(185, 185, 35);
+        }
+    </style>
+</head>
+<body>
+    <!--Conteudo-->
+    <h1>Veja os dados fornecidos:</h1>
+    <script>
+        //Interação
+        //Number() - Identifica o tipo de número
+        //Number.parseInt() - Caso queira exclusivamente numero inteiro
+        //Number.parseFloat() - Caso queira exclusivamente um numero real
+        //String() / .toString - Converte numero para string
+        var numero1 = window.prompt('Digite um número (inteiro): ')
+        var numero2 = window.prompt('Digite outro número (inteiro): ')
+        var soma1 = numero1 + numero2
+        var soma2 = Number(numero1) + Number(numero2)
+        window.alert('O resultado é: ' + soma1)
+        window.alert('HAHAHA! Você caiu no bait da concatenação, pois o prompt só retorna string')
+        window.alert('Agora esse é o resultado correto: ' + soma2)
+        document.write(`<p>E esses foram todos os numeros apresentados: ${numero1}, ${numero2}, ${soma1} e ${soma2}</p>`)
+        //O alerta acima foi escrito em template string, mas também pode ser escrita em concatenação, porém é mais "extensa":
+        // "E esses foram todos os numero obtidos: " + numero1 + ", " + numero2 + ", " + soma1 + " e " + soma2
+    </script>
+</body>
+</html>
