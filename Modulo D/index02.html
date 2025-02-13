@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nascimento</title>
+</head>
+<body>
+    <h1>Sistema de Nacionalidade</h1>
+    Pais de Nascimento: <input type="text" name="txtnac" id="txtnac" placeholder="Nasceu em?"> 
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res"></div>
+    <script>
+        function calcular(){        
+            var nac = window.document.querySelector('input#txtnac')
+            var res = window.document.querySelector('div#res')
+            var pais = nac.value.trim().toLowerCase() //Importante para o código não causar distinções entre maiúsculas e minúsculas ou espaços 
+            //x.value é o que retornar o valor do input e não o elemento html dele
+            res.innerHTML = `<p>Você nasceu em: <strong>${nac.value}</strong></p>`  
+            if (pais == 'brasil'){
+                res.innerHTML += `<p>Você é Brasileiro</p>`
+            } else {
+                res.innerHTML += `<p>Você é Estrangeiro</p>`
+            }
+        }
+    </script>
+</body>
+</html>
