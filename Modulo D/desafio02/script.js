@@ -34,7 +34,8 @@ function verificar() {
         img.src = 'imagem/pexels-j-carter-53083-254069.jpg'
     } else if (idade > 50 && idade < 150){
         res.innerHTML = `Detectamos ${genero} com ${idade} anos.<br>`
-        img.src = 'imagem/pexels-mikhail-nilov-6972758.jpg'
+        img.setAttribute('src', 'imagem/pexels-mikhail-nilov-6972758.jpg')
+        //Esses metódos para trocar imagens, no geral, trazem resultado identico, mas que funcionam de maneira diferente
     } else if (idade > 150) {
         res.innerHTML = `Detectamos ${genero} com ${idade} anos.<br>`;
         res.innerHTML += `Encontramos Matusalém! 🧓`;
