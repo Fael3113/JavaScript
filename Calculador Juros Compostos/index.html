@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora de Juros Compostos</h1>
+    </header>
+    <main>
+        <section>
+            <div>
+                Montante Inicial: <input type="number" name="montante" id="montante">
+            </div>
+            <div>
+                Taxa de Juros Anual (%): <input type="number" name="taxa" id="taxa">
+            </div>
+            <div>
+                Tempo (Anos): <input type="number" name="tempo" id="tempo">
+            </div>
+            <div>
+                Aporte Mensal: <input type="number" name="aporte" id="aporte">
+            </div>
+            <div>
+                <input type="button" value="Contar" onclick="contar()">
+            </div>
+            <div id="res">
+                Calculando...
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Rafael</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
